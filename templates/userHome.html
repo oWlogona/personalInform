@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block styles %}
+{% endblock %}
+
+{% block page_title %}
+    <title>User Home page</title>
+{% endblock %}
+
+{% block content %}
+    <section class="cd-section">
+        <button class="cd-bouncy-nav-trigger" href="#0">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </section>
+    <div class="cd-bouncy-nav-modal">
+        <nav>
+            <ul class="cd-bouncy-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Transactions</a></li>
+                <li><a href="/create_card/">Cards</a></li>
+                <li><a href="#gallery">Accounts</a></li>
+                <li><a href="#team">Settings</a></li>
+                <li><a href="/logout/">Exit</a></li>
+            </ul>
+        </nav>
+        <a href="#0" class="cd-close">Close modal</a>
+    </div>
+{% endblock content %}
